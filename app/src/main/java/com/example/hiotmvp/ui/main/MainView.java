@@ -1,4 +1,4 @@
-package com.example.hiotmvp.ui.login;
+package com.example.hiotmvp.ui.main;
 
 import com.example.hiotmvp.ui.base.BaseView;
 
