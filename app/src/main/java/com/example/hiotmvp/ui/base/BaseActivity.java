@@ -17,7 +17,7 @@ public abstract class BaseActivity<V extends BaseView, P extends BasePresenter<V
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        injectDependences();
+        injectDependence();
         basePresenter = createPresenter();
         if (basePresenter != null) {
             basePresenter.setView((V) this);
@@ -31,7 +31,7 @@ public abstract class BaseActivity<V extends BaseView, P extends BasePresenter<V
         return activityComponent;
     }
 
-    public abstract void injectDependences();
+    public abstract void injectDependence();
 
     @Override
     protected void onDestroy() {

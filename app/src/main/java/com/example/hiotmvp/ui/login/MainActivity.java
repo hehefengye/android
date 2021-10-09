@@ -51,7 +51,7 @@ public class MainActivity extends BaseActivity<MainView, MainPresenter> implemen
     }
 
     @Override
-    public void injectDependences() {
+    public void injectDependence() {
         getActivityComponent().inject(this);
     }
 
