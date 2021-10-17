@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--登录注册layout的paddingleft-->
+    <dimen name="login_layout_paddingleft">15dp</dimen>
+</resources>

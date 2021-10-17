@@ -1,7 +1,6 @@
 package com.example.hiotmvp.ui.main;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.RadioGroup;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +9,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.hiotmvp.R;
 import com.example.hiotmvp.ui.base.BaseActivity;
+import com.example.hiotmvp.ui.mine.MineFragment;
 import com.example.hiotmvp.widget.NoSlideViewPager;
 
 import java.util.ArrayList;

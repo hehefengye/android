@@ -6,7 +6,7 @@ public class ResultResponse<T> implements Serializable {
 
     private T data;
     private String msg;
-    private String status;
+    private int status;
 
     @Override
     public String toString() {
@@ -17,7 +17,7 @@ public class ResultResponse<T> implements Serializable {
                 '}';
     }
 
-    public ResultResponse(T data, String msg, String status) {
+    public ResultResponse(T data, String msg, int status) {
         this.data = data;
         this.msg = msg;
         this.status = status;
@@ -39,11 +39,11 @@ public class ResultResponse<T> implements Serializable {
         this.msg = msg;
     }
 
-    public String getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 }

@@ -40,7 +40,7 @@ public class BasePresenter<V extends BaseView> {
 
                     @Override
                     public void onError(Throwable e) {
-
+                        callBackResponse.onError(e);
                     }
 
                     @Override
@@ -55,6 +55,10 @@ public class BasePresenter<V extends BaseView> {
     public abstract class CallBackResonse<T> {
 
         public abstract void onNext(T t);
+
+        public void onError(Throwable e) {
+
+        }
 
     }
 
